@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/open_record_mark_iv"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/open_record_circle_shape" />
+
+    <View
+        android:id="@+id/open_record_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/open_record_mark_iv"
+        android:background="#FFCACACA"></View>
+
+    <View
+        android:id="@+id/open_record_left_line"
+        android:layout_width="1px"
+        android:layout_height="65dp"
+        android:layout_below="@+id/open_record_mark_iv"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="6dp"
+
+        android:background="#FFCACACA"></View>
+
+    <TextView
+        android:id="@+id/open_record_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_record_top_line"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/open_record_left_line"
+        android:paddingLeft="10dp"
+        android:text="8:30"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/open_record_terminal_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_record_top_line"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/open_record_time_tv"
+        android:paddingLeft="20dp"
+        android:text="移动端"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/open_record_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_record_time_tv"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/open_record_left_line"
+        android:paddingLeft="10dp"
+        android:text="王二"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/open_record_door_NO_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_record_terminal_tv"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/open_record_time_tv"
+        android:paddingLeft="35dp"
+        android:text="单元门"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/open_record_top_line"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/allotkey_circle_shape" />
+</RelativeLayout>
